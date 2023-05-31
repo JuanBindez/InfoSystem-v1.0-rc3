@@ -1,0 +1,5 @@
+main.o
+info_so.o
+info_cpu.o
+info_gpu.o
+temp_system.o
