@@ -1,4 +1,4 @@
-# InfoSystem v1.0-rc1
+# InfoSystem 1.0-rc2
 
 
 
