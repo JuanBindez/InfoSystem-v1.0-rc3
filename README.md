@@ -1,7 +1,13 @@
-# InfoSystem-v1.0.dev1
+# InfoSystem v1.0-rc1
+
+
 
 #### Shows informations of the operational system
 
 ### Compilation in Linux:
 
-    gcc `pkg-config --cflags gtk+-3.0` -o sistema_info info_system.c `pkg-config --libs gtk+-3.0`
+    make
+
+### To clean up the generated object and executable files:
+
+    make clean
