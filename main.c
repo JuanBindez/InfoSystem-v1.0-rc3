@@ -1,6 +1,6 @@
 /*
  * InfoSystem: show informations of the operation system.
- * Release: v1.0-rc2
+ * Release: v1.0-rc3
  * 
  * Copyright © 2023  Juan Bindez  <juanbindez780@gmail.com>
  * 
@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
     GtkWidget *button;
 
     window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-    gtk_window_set_title(GTK_WINDOW(window), "Informações do Sistema");
+    gtk_window_set_title(GTK_WINDOW(window), "InfoSystem");
     gtk_container_set_border_width(GTK_CONTAINER(window), 10);
     gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
     gtk_widget_set_size_request(window, 400, 300);
@@ -48,19 +48,19 @@ int main(int argc, char *argv[]) {
     grid = gtk_grid_new();
     gtk_container_add(GTK_CONTAINER(window), grid);
 
-    button = gtk_button_new_with_label("Informações do Sistema Operacional");
+    button = gtk_button_new_with_label("Info operational system");
     g_signal_connect(button, "clicked", G_CALLBACK(exibirInformacoesSO), NULL);
     gtk_grid_attach(GTK_GRID(grid), button, 0, 0, 1, 1);
 
-    button = gtk_button_new_with_label("Informações da CPU");
+    button = gtk_button_new_with_label("CPU");
     g_signal_connect(button, "clicked", G_CALLBACK(exibirInformacoesCPU), NULL);
     gtk_grid_attach(GTK_GRID(grid), button, 0, 1, 1, 1);
 
-    button = gtk_button_new_with_label("Informações da GPU");
+    button = gtk_button_new_with_label("GPU");
     g_signal_connect(button, "clicked", G_CALLBACK(exibirInformacoesGPU), NULL);
     gtk_grid_attach(GTK_GRID(grid), button, 0, 2, 1, 1);
 
-    button = gtk_button_new_with_label("Temperatura do Sistema");
+    button = gtk_button_new_with_label("Temp system");
     g_signal_connect(button, "clicked", G_CALLBACK(exibirTemperaturaSistema), NULL);
     gtk_grid_attach(GTK_GRID(grid), button, 0, 3, 1, 1);
 
