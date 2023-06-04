@@ -20,3 +20,6 @@ main.o: main.c
 
 clean:
 	rm -f $(EXECUTABLE) $(OBJECTS) main.o
+	
+start:
+	./$(EXECUTABLE)
