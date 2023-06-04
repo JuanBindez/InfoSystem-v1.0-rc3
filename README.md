@@ -2,9 +2,9 @@
 
 
 
-### Aboult
+### Aboult:
 
-#### Shows informations of the operational system
+##### Shows informations of the operational system
 
 ### Compilation in Linux:
 
