@@ -7,7 +7,11 @@
 ### Compilation in Linux:
 
     make
+    
+### To execute program:
 
+    make start
+    
 ### To clean up the generated object and executable files:
 
-    make clean
+    make clear
