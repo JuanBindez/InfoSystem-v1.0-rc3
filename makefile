@@ -18,7 +18,7 @@ $(SRCDIR)/%.o: $(SRCDIR)/%.c
 main.o: main.c
 	$(CC) $(CFLAGS) -c main.c -o main.o `pkg-config --cflags gtk+-3.0`
 
-clean:
+clear:
 	rm -f $(EXECUTABLE) $(OBJECTS) main.o
 	
 start:
