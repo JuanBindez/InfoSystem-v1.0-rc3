@@ -5,7 +5,7 @@ LIBS = `pkg-config --libs gtk+-3.0`
 SRCDIR = src
 SOURCES = $(wildcard $(SRCDIR)/*.c)
 OBJECTS = $(SOURCES:.c=.o)
-EXECUTABLE = InfoSys-v1.0-rc3-x86_64-Ubuntu
+EXECUTABLE = InfoSys-v1.0-rc3-x86-64-Ubuntu
 
 all: $(EXECUTABLE)
 
