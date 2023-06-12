@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <gtk/gtk.h>
 
-// Função para exibir a temperatura do sistema
+
 void exibirTemperaturaSistema(GtkWidget *widget, gpointer data) {
     GtkWidget *dialog;
 
-    // Comando 'sensors' para obter a temperatura do sistema
     FILE *cmd = popen("sensors", "r");
     if (cmd == NULL) {
         dialog = gtk_message_dialog_new(NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_OK, "Erro ao obter a temperatura do sistema.");
@@ -22,6 +21,6 @@ void exibirTemperaturaSistema(GtkWidget *widget, gpointer data) {
     }
 
     pclose(cmd);
-    gtk_widget_destroy(widget);  // <--- Linha corrigida
-    g_free(data);  // <--- Linha corrigida
+    gtk_widget_destroy(widget);
+    g_free(data);
 }
