@@ -1,7 +1,6 @@
 # InfoSystem 1.0-rc3
 
 
-
 ### Aboult:
 
 ##### Shows informations of the operational system
